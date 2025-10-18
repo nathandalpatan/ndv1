@@ -1,26 +1,66 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --background: #ffffff;
+    --foreground: #171717;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --font-sans: var(--font-geist-sans);
+    --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+    :root {
+        --background: #0a0a0a;
+        --foreground: #ededed;
+    }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    background: var(--background);
+    color: var(--foreground);
+    font-family: "Mono Sans", sans-serif;
+    overflow-x: hidden;
+}
+
+.slide {
+    display: inline-block;
+    flex-direction: column;
+    transition: all cubic-bezier(0.71, 0.03, 0.34, 1);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    animation: wordSlider 21s infinite cubic-bezier(0.9, 0.01, 0.3, 0.99);
+}
+
+@keyframes wordSlider {
+    0% {
+        transform: translateY(0.5%);
+    }
+    12.5% {
+        transform: translateY(-12.5%);
+    }
+    25% {
+        transform: translateY(-25%);
+    }
+    37.5% {
+        transform: translateY(-37.5%);
+    }
+    50% {
+        transform: translateY(-50%);
+    }
+    62.5% {
+        transform: translateY(-62.5%);
+    }
+    75% {
+        transform: translateY(-75%);
+    }
+    87.5% {
+        transform: translateY(-87.5%);
+    }
 }
