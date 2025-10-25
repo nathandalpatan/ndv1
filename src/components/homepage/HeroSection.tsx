@@ -1,19 +1,16 @@
+import Link from "next/link";
 import words from "@/constant/index";
 
 export default function HeroSection() {
   return (
-    <div className="flex min-h-screen items-center justify-center">
-      <h1 className="hero-text">
-        <div className="slide">
-          <div className="wrapper">
-            {words.map((word, index) => (
-              <span key={index}>
-                <span className="">{word.text}</span>
-              </span>
-            ))}
-          </div>
-        </div>
-      </h1>
+    <div className="min-h-screen flex justify-center items-center flex-col gap-10">
+      <h1 className="font-bold text-9xl">NATHAN DALPATAN</h1>
+      <Link href="#about" className="link">
+        ABOUT
+      </Link>
+      <Link href="#contact" className="link">
+        CONTACT
+      </Link>
     </div>
   );
 }
