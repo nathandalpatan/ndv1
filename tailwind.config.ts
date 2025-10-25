@@ -8,7 +8,12 @@ const config: Config = {
   ],
   darkMode: "class", // This is important!
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        dark: "#171717",
+        light: "#ffffff",
+      },
+    },
   },
   plugins: [],
 };

@@ -1,3 +1,4 @@
+import Footer from "@/components/common/Footer";
 import Header from "@/components/common/Header";
 import WIP from "@/components/common/Wip";
 
@@ -6,6 +7,7 @@ export default function LeetcodePage() {
     <div>
       <Header />
       <WIP />
+      <Footer />
     </div>
   );
 }

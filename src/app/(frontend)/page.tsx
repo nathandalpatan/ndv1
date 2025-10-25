@@ -8,9 +8,6 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <div className="flex flex-col items-center justify-center pt-20">
-        NOTE THAT THIS IS NOT THE FINAL VISION... STILL PLANNING... LOL
-      </div>
       <section id="hero">
         <HeroSection />
       </section>
